@@ -6,7 +6,7 @@ const app = express();
 const userRoutes = require("./Routes/user");
 const auth = require("./middelware/auth");
 const path = require("path");
-const Port = 4000 || process.env.port;
+const Port = process.env.port || 4000;
 
 // export models
 const fileModel = require("./Models/UploadSchema");
